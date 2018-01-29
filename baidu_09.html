@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/><!-- 适配移动端需要加上缩放比例 -->
+    <title>响应式布局</title>
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/baiduIco.ico" />
+    <link rel="stylesheet" type="text/css" href="css/baidu_08.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/baidu_m_02.css" media="screen and (max-width: 768px)">
+    <!-- 兼容ie9以下识别html5新增标签 -->
+    <!-- [if lt ie9] -->
+    <script type="text/javascript">
+        var i = 0,html5tags = ["header","footer","nav","aside","article","section"];
+        for (i in html5tags){
+            document.createElement(html5tags[i]);
+        }
+    </script>
+    <!-- [endif] -->
+</head>
+
+<body>
+    <div class="pc">
+        <!-- 导航栏 -->
+        <header>
+            <div class="more_ctl_parent" >更多产品
+                <div class="more_ctl_child">
+                    <div class="more_icon" >
+                        <span class="more_font3" >更多产品</span>
+                    </div><hr>
+
+                    <div class="more_icon" >
+                        <a href="http://www.nuomi.com/?cid=002540"><input type="image"  class="more_img" src="img/luomi.png"></a><br>
+                        <a class="more_font"  href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    </div><hr>
+
+                    <div class="more_icon" >
+                        <a href="http://music.baidu.com/"><input type="image" class="more_img" src="img/du.png"></a> <br>
+                        <a class="more_font"  href="http://music.baidu.com/">音乐</a>
+                    </div><hr>
+
+                    <div class="more_icon" >
+                        <a href="http://image.baidu.com/"><input type="image" class="more_img" src="img/tu.png"></a> <br>
+                        <a class="more_font"  href="http://image.baidu.com/">图片</a>
+                    </div><hr>
+
+                    <div class="more_icon"  >
+                        <a href="http://zhidao.baidu.com/"> <input type="image" class="more_img" src="img/question.png"></a><br>
+                        <a class="more_font"  href="http://zhidao.baidu.com/">知道</a>
+                    </div><hr>
+
+                    <div class="more_icon"  >
+                        <a href="http://wenku.baidu.com/"><input type="image" class="more_img" src="img/wen.png"></a> <br>
+                        <a class="more_font"  href="http://wenku.baidu.com/">文库</a>
+                    </div><hr>
+
+                    <div class="more_icon"  >
+                        <a href="http://top.baidu.com/"><input type="image" class="more_img" src="img/data.png"></a> <br>
+                        <a class="more_font"  href="http://top.baidu.com/">风云榜</a>
+                    </div><hr>
+
+                    <div class="more_icon"  >
+                        <a  class="more_font2"  href="https://www.baidu.com/more/">全部产品>></a>
+                    </div> 
+                    <div class="moreTableLine"></div>
+                </div>
+            </div>
+            <nav>
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="https://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="https://tieba.baidu.com/index.html">贴吧</a>
+                <a href="http://xueshu.baidu.com/">学术</a>
+                <a class="login" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+                <div class="setting_parent" >
+                    <a class="setting_font" href="http://www.baidu.com/gaoji/preferences.html" >设置</a>
+                    <div class="setting_child" >
+                        <div class="square_div">
+                            <img class="square" src="img/menu.png">
+                        </div>
+                        <div class="table_div">
+                            <a href="javascript:;">搜索设置</a>
+                            <a href="javascript:;">高级搜索</a>
+                            <a href="javascript:;">开始预测</a>
+                            <a href="javascript:;">搜索历史</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 搜索内容 -->
+        <div class="baiduLogo" >
+            <a class="baiduLogo_img" href="https://www.baidu.com/s?wd=%E6%AF%8D%E4%BA%B2%E8%8A%82&oq=%25E5%2585%2583%25E5%25AE%25B5%25E8%258A%2582&tn=SE_pshlcjsy_xef5bmh9" target="_blank">
+                <img class="baidu_img" src="img/mother.gif" width="270" height="129" alt="母爱相伴，点亮每个夜晚" title="母爱相伴，点亮每个夜晚">
+            </a>
+            <form class="baidu_form" action="https://www.baidu.com/s" method="get" target="_blank" id="form01">
+                <input class="input01" type="text" name="wd" >
+
+                <input class="imageField" type="submit" value="百度一下">
+            </form>
+            <div class="MC">
+                <div class="Microphone_all" >
+                    <div class="Microphone_gray" >
+                        <input class="mic_g_img" type="image" src="img/Microphone_gray.png">
+                        <div class="Microphone_blue">
+                            <input class="mic_b_img" type="image" src="img/Microphone_blue.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="Vertical_bar_div" >
+                    <hr class="Vertical_bar">
+                </div>
+                
+
+                <div class="Camera_all" >
+                    <div class="Camera_gray" >
+                        <input class="cam_g_img" type="image" src="img/Cameras_gray.png">
+                        <div class="Camera_blue">
+                            <input class="cam_b_img" type="image" src="img/Cameras_blue.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部内容 -->
+        <footer>
+            <p class="byPhone_image">
+                <img src="img/barcode.png" width="60" height="60">
+            </p>
+            <p class="describe_byPhone">
+                <span class="byPhone">手机百度</span>
+            </p>
+            <p class="describe_01">
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/">About  Baidu</a>
+                <a href="http://e.baidu.com/?refer=888">百度推广</a>
+            </p>
+            <p class="describe_02">
+                <span>©2017 Baidu </span>
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号 </span>
+                <img src="img/netLabel.png">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+                <img src="img/nationalEmblem.png">
+            </p>
+        </footer>
+    </div>
+
+
+
+    <div class="mobile">
+        <!-- 详细天气 -->
+        <div class="weatherDetails">
+            
+        </div>
+        <!-- 主内容 -->
+        <div class="mobileContent">
+            <!-- 顶栏 -->
+            <header>
+                <!-- 天气简报 -->
+                <div  class="weatherDriefing">
+                    <!-- <img src="img/weather.jpg"> -->
+                </div>
+                <!-- 登录 -->
+                <div class="m_login"></div>
+            </header>
+            <!-- 搜索区 -->
+            <div class="searchArea">
+                <!-- logo -->
+                <div class="m_logo">
+                    <img src="img/plus_logo.png">
+                </div>
+                <!-- 搜索 -->
+                <div class="searchPlane">
+                     <form action="https://www.baidu.com/s" method="get" target="_blank">
+                        <div>
+                            <input class="input02" type="text" name="wd" >
+                            <div class="mic_area">
+                                <i></i>
+                                <div></div>
+                            </div>
+                        </div>
+                        <input class="imageField02" type="submit" value="百度一下">
+                    </form>
+                    
+                    
+                </div>
+                
+                <!-- 引导栏 -->
+                <div class="guidance">
+                    <ul>
+                        <li>
+                            <a href="https://mbd.baidu.com/webpage?action=icard&type=subscribe&channel=wise_home" >
+                                <i></i>
+                                <span>关注</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://news.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1#/?_k=089y0j" >
+                                <i></i>
+                                <span>新闻</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://dushu.m.baidu.com/" >
+                                <i></i>
+                                <span>小说</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sv.baidu.com/#/?_k=x0yxf9" >
+                                <i></i>
+                                <span>视频</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://m.nuomi.com/?cid=wise_shouye_nuomi" >
+                                <i></i>
+                                <span>糯米</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&wtj=wi&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1&showcvr=1" >
+                                <i></i>
+                                <span>地图</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 新闻内容 -->
+            <div  class="news">
+                <section class ="Scheme1">
+                    <a href="http://news.91.com/all/s592fba482000.html">
+                        <h2>今年下半年即将发布的5款超级旗舰机，你肯定会爱上</h2>
+                        <div>
+                            <img src="img/101.jpeg" alt="">
+                            <img src="img/102.jpeg" alt="">
+                            <img src="img/103.jpeg" alt="">
+                        </div>
+                        <p>
+                            <span>安卓网</span>
+                            <span>06-01</span>
+                        </p>
+                    </a>
+                </section>
+                <section class ="Scheme1">
+                    <a href="https://baijiahao.baidu.com/po/feed/share?wfr=spider&for=pc&context=%7B%22sourceFrom%22%3A%22bjh%22%2C%22nid%22%3A%22news_4239865333394505201%22%7D">
+                        <h2>中国舆论场指数   [2017.06.02]</h2>
+                        <div>
+                            <img src="img/201.jpeg" alt="">
+                            <img src="img/202.jpeg" alt="">
+                            <img src="img/203.jpeg" alt="">
+                        </div>
+                        <p>
+                            <span>今天的早报</span>
+                            <span>07:32</span>
+                        </p>
+                    </a>
+                </section>
+                <section class ="Scheme1">  
+                    <a href="https://baijiahao.baidu.com/po/feed/share?wfr=spider&for=pc&context=%7B%22sourceFrom%22%3A%22bjh%22%2C%22nid%22%3A%22news_3872142439688847756%22%7D">
+                            <h2>先萨德后限韩令，韩国人现已被吓哭，哭着说真可怕！</h2>
+                        <div>
+                            <img src="img/301.jpeg" alt="">
+                            <img src="img/302.jpeg" alt="">
+                            <img src="img/303.jpeg" alt="">
+                        </div>
+                        <p>
+                            <span>军事路线</span>
+                            <span>09:36</span>
+                        </p>
+                    </a>
+                </section> 
+                <section class ="Scheme2">  
+                    <a href="http://t.m.youth.cn/transfer/index/url/news.youth.cn/jsxw/201706/t20170603_9956524.htm">
+                        <div id="OnlyOne_pic">
+                            <img id="OnlyOne_img" src="img/601.jpeg" alt="">
+                        </div>
+                        <div id="OnlyOne_font">
+                             <h2>联合国安理会一致通过决议制裁更多朝鲜个人及实体</h2>
+                            <p>
+                                <span>中国新闻网</span>
+                                <span>08:06</span>
+                            </p>
+                        </div>
+                    </a>
+                </section> 
+
+                <section class ="Scheme3">  
+                    <a href="http://w.0550.com/wap/thread/view-thread?tid=855164">
+                        <h2>世界之最你肯定没见过！第五张亮了</h2>
+                        <div class="scheme3_div" >
+                            <div class="Scheme3_img"></div>
+                            <img src="https://ss0.bdstatic.com/9bA1vGba2gU2pMbfm9GUKT-w/timg?searchbox_feed&amp;quality=120&amp;wh_rate=0&amp;size=f648_364&amp;ref=http%3A%2F%2Fwww.baidu.com&amp;sec=0&amp;di=03e9ebffc0b48731add3eda1466f83d4&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D3640937572%2C1004011097%26fm%3D175%26s%3D1620B50CB43A6F9A868417DD0300C027%26w%3D660%26h%3D370%26img.JPEG">
+                            
+                            <div class="blackLine">
+                                <span>5图</span>
+                            </div>
+                        </div>
+                        <p>
+                            <span>八零后</span>
+                            <span>07:12</span>
+                        </p>
+                    </a>
+                </section> 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

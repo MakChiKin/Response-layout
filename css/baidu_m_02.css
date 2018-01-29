@@ -1,0 +1,348 @@
+/*PC端显示，移动端隐藏*/
+@media screen and (min-width: 768PX){
+	.pc{display: block;}
+	.mobile{display: none;}
+}
+/*移动显示，PC端隐藏*/
+@media screen and (max-width: 768PX){
+	.pc{display: none;}
+	.mobile{display: block;}
+}
+.pc{
+	display: none;
+}
+
+
+/*初始化*/
+*{
+	padding:0;
+	margin: 0;
+}
+/*mobile*/
+.mobile {
+	width: 100%;
+	background: #fff;
+}
+/*.weatherDetails{
+	float: left;
+	width: 100%;
+	height: 0px;
+	background: url(../img/weather02.jpg) 0 0 no-repeat;
+	background-size: 414px 248px;
+}*/
+
+.mobileContent{
+	float: left;
+	width: 100%;
+	background: #fff;
+}
+/*主内容顶栏*/
+.mobileContent header{
+	height: 33px;
+	width: 100%;
+	background: #f8f8f8;
+}
+/*天气简报*/
+.weatherDriefing{
+	float: left;
+	height: 33px;
+	width: 180px;
+	background: url(../img/weather.jpg) 0 0 no-repeat;
+	background-size: 180px 33px;
+	/*background: red;*/
+}
+.weatherDriefing img{
+	float: left;
+	height: 33px;
+	width: 180px;
+}
+/*登录*/
+.m_login{
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    margin-right: 1.5%;
+    background: url(../img/xuebitu.jpg) -165px 0 no-repeat;
+    background-size: 214px;
+}
+/*搜索栏*/
+.searchArea{
+	float: left;
+	height: 220px;
+	width: 100%;
+	background: #f8f8f8;
+}
+.m_logo{
+	width: 100%;
+	height: 74px;
+	/*background: red;*/
+	margin: 10px 0px 0px 0px;
+}
+.m_logo img{
+  	width: 183px;
+  	height: 57px;
+  	display: block;
+  	margin: 0 auto;
+}
+.searchPlane{
+	width: 100%;
+	height: 47px;
+	margin-bottom: 10px;
+}
+.searchPlane form{
+	display: -webkit-flex;
+	display:flex;
+	width: 92%;
+	height: 50px;
+	margin: 0 auto;
+}
+.searchPlane form div{
+	-webkit-flex:1;
+
+}
+.input02{
+	float: right;
+	width: 100%;
+	height: 43px;
+	text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    text-indent: 7px;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+
+}
+.imageField02{
+	display: block;
+	float: right;
+	width: 82px;
+	height: 47px;
+	background-color: #3a88fb;
+    font-size: 15px;
+    color: white;
+    border: 0;
+    text-align: center;
+    outline: 0;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+}
+.mic_area{
+	width: 39px;
+	height: 39px;
+	float: right;
+	/*background: red;*/
+	position: relative;
+    top: -43px;
+}
+.mic_area i{
+	float: left;
+	width: 14px;
+	height: 20px;
+	background: url(../img/xuebitu.jpg) -251px 0 no-repeat;
+	background-size: 277px;
+	margin-top: 8px; 
+}
+.mic_area div{
+	float: left;
+    height: 0px;
+    width: 0px;
+    border: 5px solid transparent;
+    border-top-color: #717077;
+    position: relative;
+    top: 14px;
+    left: 5px;
+
+}
+/*引导栏*/
+.guidance{
+	width: 92%;
+	height: 91px;
+	margin: 18px auto;
+}
+.guidance ul{
+	list-style-type: none;
+	display: -webkit-flex;
+}
+.guidance ul li{
+	float: left;
+	width: 28px;
+	height: 43px;
+	-webkit-flex:1;
+}
+.guidance ul li:nth-child(6){
+	float: left;
+	width: 28px;
+	height: 43px;
+	-webkit-flex:0;
+}
+.guidance ul li a{
+	float: left;
+	width: 28px;
+	height: 43px;
+	text-decoration: none;
+}
+.guidance ul li a i{
+	display: block;
+    margin: 0 auto;
+	width: 22px;
+	height: 22px;
+}
+.guidance ul li:nth-child(1) a i{
+	background: url(../img/xuebitu.jpg) 0 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li:nth-child(2) a i{
+	background: url(../img/xuebitu.jpg) -33px 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li:nth-child(3) a i{
+	background: url(../img/xuebitu.jpg) -65px 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li:nth-child(4) a i{
+	background: url(../img/xuebitu.jpg) -97px 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li:nth-child(5) a i{
+	background: url(../img/xuebitu.jpg) -132px 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li:nth-child(6) a i{
+	background: url(../img/xuebitu.jpg) -165px 0 no-repeat;
+	background-size: 265px;
+}
+.guidance ul li a span{
+	float: left;
+	width: 28px;
+	display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #999
+}
+/*新闻*/
+.news{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.Scheme1,.Scheme2,.Scheme3{
+	display: block;
+	width: 100%;
+	height:auto;
+	margin: 10px auto;
+	float: left;
+	
+}
+.Scheme1 a,.Scheme2 a,.Scheme3 a{
+	text-align: left;
+	display: block;
+	height: auto;
+	width: 92%;
+	background: #fff;
+	text-decoration: none;
+	list-style-type: none;
+	cursor: auto;
+	margin: 0 auto;
+	border-bottom: 1px solid #f0f0f0;
+}
+.Scheme1 a h2,.Scheme2 a div h2,.Scheme3 a h2{
+	width: 100%;
+	font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+}
+.Scheme1 a div{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+}
+.Scheme1 a div img{
+	float: left;
+	width: 32.99%;
+	height: auto;
+	margin-left: 1px;
+	
+}
+.Scheme1 a p,.Scheme2 a div p,.Scheme3 a p{
+	margin: 5px 0;
+}
+.Scheme1 a p span,.Scheme2 a div p span,.Scheme3 a p span{
+	margin-right: 8px;
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+}
+
+/*新闻4*/
+#OnlyOne_pic{
+	float: left;
+	width: 33.3%;
+	height: auto;
+
+}
+#OnlyOne_pic img{
+	width: 100%;
+	height: 100%;
+}
+#OnlyOne_font{
+	float: right;
+	width: 62%;
+	height: auto;
+}
+/*新闻5*/
+.scheme3_div{
+	width: 100%;
+    position: relative;/*设置局部区域*/
+}
+.Scheme3_img{
+	width: 100%;
+    padding-top: 56.17%;
+    background: red;
+}
+.Scheme3 a div img{
+	width: 100%;
+	height: auto;
+	position: absolute;/*设置绝对位置*/
+    top: 0;
+    right: 0;
+}
+.blackLine{
+	z-index: 2;
+	width: 100%;
+    height: 36px;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: right;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+.blackLine span{
+	float: right;
+    z-index: 3;
+    margin-right: 4%;
+    margin-top: 10px;
+    line-height: 12px;
+    font-size: 10px;
+    color: #fff;
+
+}

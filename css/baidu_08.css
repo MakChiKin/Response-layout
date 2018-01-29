@@ -1,0 +1,444 @@
+
+/*初始化*/
+*{
+	padding:0;
+	margin: 0;
+}
+/*PC*/
+/*导航栏*/
+html,body{
+	height: 100%;
+}
+body{
+	min-width: 815px; 
+	min-height: 600px;
+	position: relative;
+	font: 14px arial;
+}
+
+header{
+	min-width: 810px;
+}
+header nav{
+	height: 30px;
+	width: 400px;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: 19px;
+
+}
+header nav a{
+	float: left; 
+    color: #333; /*颜色*/
+    font-weight: 600;/*字体厚度*/
+    line-height: 24px; /*行高度*/
+    margin-left: 20px; /*左间距*/
+    font-size: 13px;/*字号*/
+    font-family: "arial";
+    text-decoration: underline;
+}
+header nav a:hover{
+	color: #00c;
+}
+hr{
+	width: 70px;
+	opacity: 0.1;
+	position: relative;
+    top: 17px;
+}
+
+.more_ctl_parent{
+	float: right;
+    margin-right: 12px;
+    margin-top: 18px;
+    width: 60px;
+    height: 25px;
+    background-color: #3a88fb;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+
+}
+.more_ctl_child{
+    width: 90px;
+    height: 100%;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: #f9f9f9;
+    display: none;
+}
+.more_ctl_parent:hover .more_ctl_child{
+	display: block;
+}
+
+.more_icon:hover .more_font{
+	text-decoration: underline;
+	color: black;
+}
+.more_icon:active .more_font{
+	color:#00c;
+}
+
+.more_icon{
+	text-align: center;
+	padding-top: 22px;
+	line-height: 20px;
+}
+
+.more_img{
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	outline: 0;
+}
+
+.more_font{
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px ;
+	font-family: "Arial";
+	color: #666666;
+	text-decoration:none;
+}
+.more_font:active {
+	color: #00c;
+}
+.more_font2{
+	width: 90px;
+	position: relative;
+    top: 20px;
+	font-size: 12px ;
+	font-weight: 500;
+	color: #666666;
+}
+.more_font2:active {
+	color: #00c;
+}
+.more_font3{
+	width: 90px;
+	font-size: 13px ;
+	font-weight: 500;
+	color: #666666;
+	font-size: 13px;
+    font-family: "arial";
+}
+.moreTableLine{
+	width: 1px;
+	height: 100%;
+	background-color:#e7e7e7;
+	z-index: 3;
+    position: absolute;
+    top: 0;
+}
+.moreLine{
+	width: 1px;
+	height: 100%;
+	background-color: red;
+}
+
+
+
+/*主体部分*/
+.baiduLogo {
+	text-align: center;
+	padding-top: 120px;
+	min-width: 810px;
+}
+.baiduLogo_img{
+	position: relative;
+    top: 20px;
+}
+.baidu_img{
+	outline: 0\0;/*\9\0只对IE8 9 10生效*/
+	border: 0\0;/*\9\0只对IE9 8 10生效*/
+	*outline: 0;/*\9\0只对IE6 7生效*/
+	*border: 0;/*\9\0只对IE6 7生效*/
+}
+#form01 {
+	text-align: center;
+}
+.baidu_form{
+	width: 700px;
+    margin: 0px auto;
+    position: relative;
+    top: 27px;
+    left: 2px;
+}
+.input01{
+	width: 540px;
+	height: 34px;
+	position: relative;
+	right:  0px;
+    font: 16px/18px arial;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    outline: 0;
+    text-indent: 7px;
+}
+.input01:hover{
+	border-color: #999;
+}
+.input01:focus{
+	border-color: #4791ff;
+}
+.imageField {
+	width: 100px;
+    height: 36px;
+    background-color: #3a88fb;
+    font-size: 15px;
+    color: white;
+    border: 0;
+    text-align: center;
+    position: relative;
+    outline: 0;
+    right: 5px;
+    top:6px\0;/* IE8/9/10的hack*/
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+/*只针对IE9的hack*/
+:root .imageField {
+	position: relative;
+	top:-1px\9;
+}
+.imageField:hover {
+	background-color: #317ef3;
+	box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, .2);
+}
+.imageField:active{
+	background-color: #3075dc;
+}
+.MC{
+	width: 55px;
+	height: 34px;
+	z-index: 1;
+	margin:0px auto;
+	position: relative;
+    right:  -180px;
+    top: -16px;
+}
+.Microphone_all{
+	width: 13px;
+	height: 18px;
+	margin-top: 8px;
+}
+.Microphone_gray{
+	width: 13px;
+	height: 18px;
+	position: relative;
+    top: 8px;
+}
+.mic_g_img{
+	width: 13px;
+	height: 18px;
+}
+
+.Microphone_blue{
+	width: 13px;
+	height: 18px;
+	margin-top: -21px;
+	display: none;
+}
+.mic_b_img{
+	width: 13px;
+	height: 18px;
+}
+
+.Microphone_gray:hover .Microphone_blue{
+	display: block;
+}
+.Vertical_bar_div{
+	width:1px;
+	height: 15px;
+	margin: 0px auto;
+    margin-top: -26px;
+    margin-left: 24px;
+}
+
+.Vertical_bar{
+	width:1px;
+	height: 15px;
+	opacity: 1;
+	border: 0;
+	background-color: #cccccc;
+}
+.Camera_all{
+	width: 18px;
+	height: 16px;
+	float: right;
+	position: relative;
+    top: -13px;
+}
+.Camera_gray{
+	width: 18px;
+	height: 16px;
+	position: relative;
+    top: 15px;
+}
+.cam_g_img{
+	width: 18px;
+	height: 16px;
+}
+
+.Camera_blue{
+	width: 18px;
+	height: 16px;
+	margin-top: -19px;
+	display: none;
+}
+.cam_b_img{
+	width: 18px;
+	height: 16px;
+}
+
+.Camera_gray:hover .Camera_blue{
+	display: block;
+}
+.login{
+	font-weight: 400;
+}
+.setting_parent{
+	width: 26px;
+    height: 24px;
+    float: left;
+    margin-left: 20px;
+}
+.setting_font{
+	width: 26px;
+	font-weight: 400;
+    margin-left: 0px;
+}
+.setting_child{
+	width: 72px;
+	height: 116px;
+	float: left;
+	position: relative;
+	left: -22px;
+	top: -10px;
+	display: none;
+}
+.setting_parent:hover .setting_child{
+	display: block;
+}
+.square_div,.table_div{ 
+	position:absolute;
+
+}
+.square_div{
+	z-index: 2;
+	position: relative;
+    margin: 1px auto;
+	width: 11px;
+	height: 6px;
+}
+.square{
+	width: 11px;
+	height: 6px;
+}
+.table_div {
+	z-index: 1;
+    width: 70px;
+    height: 96px;
+    float: left;
+    position: relative;
+    top: 6px;
+    left: 2px;
+	box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .5);
+}
+.table_div a{
+	display: block;
+	text-align: center;
+	margin:0px;
+	width: 70px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 12px ;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+.table_div a:hover{
+	display: block;
+	width: 70px;
+	height: 20px;
+	color: #fff;
+	background:#3388ff; 
+	text-decoration: none;
+}
+
+.tableContent_01{
+	height: 104px;
+	width:72px;
+	border:1;
+	border-collapse: 1;
+	border-width: 1px;
+	border-collapse: collapse;
+    border-color: #ccc;
+    border-style: solid;
+}
+
+
+
+/*底部信息*/
+footer{
+    position: absolute;
+    width: 542px;
+    height: 200px;
+    margin-left: -271px;
+    left: 50%;
+    bottom: 0;
+}
+footer p {
+	text-align: center;/*居中对齐*/
+	line-height: 0px; /*行高度*/
+}
+.byPhone_image{
+	line-height: 0px; /*行高度*/
+}
+.describe_byPhone{
+	margin-top: 12px;
+}
+.byPhone {
+	text-align: center;/*居中对齐*/
+	color: #666666;
+	font-weight: 500;/*字体厚度*/
+	font-size: 12px;/*字号*/
+}
+.describe_01,.describe_02{
+	margin-top: 15px;
+	/*width: 564px;*/
+}
+.describe_01 a{
+	line-height: 10px; /*行高度*/
+	color: #999999; /*颜色*/
+    font-weight: 400;/*字体厚度*/
+    margin-left: 15px; /*左间距*/
+    font-size: 12px;/*字号*/
+    position: relative;
+    top:20px;
+
+}
+.describe_02 a,.describe_02 span, .describe_02 img{
+	line-height: 0px; /*行高度*/
+	color: #999999; /*颜色*/
+    font-weight: 400;/*字体厚度*/
+    margin-left: 2px; /*左间距*/
+    font-size: 12px;/*字号*/
+    position: relative;
+    top:10px;
+}
+.mobile{
+	display: none;
+}
+
